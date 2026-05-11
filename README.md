@@ -47,3 +47,12 @@ Para evitar que infraestruturas reais sejam comprometidas por este tipo de ataqu
 3. **Múltiplo Fator de Autenticação (MFA):** Essencial para proteger contas mesmo que a senha seja comprometida.
 4. **Monitoramento e Alertas (IDS/IPS):** Configurar regras para detectar e bloquear IPs que gerem alto volume de falhas de autenticação em um curto espaço de tempo.
 5. **Desativação de Serviços Desnecessários:** Serviços legados como FTP sem criptografia devem ser substituídos por alternativas seguras (SFTP).
+
+### 5. Automação do Ataque
+Para otimizar a execução da auditoria, foi desenvolvido um script Bash (`automacao_medusa.sh`) anexado a este repositório. O script recebe o IP do alvo como argumento e executa as varreduras do Medusa de forma automatizada e sequencial nos serviços mapeados (FTP e SMB), demonstrando uma abordagem prática de automação para testes de segurança.
+
+Rode este comando para dar a permissão de execução ao script:
+`chmod +x automacao_medusa.sh`
+
+Rode este comando para rodar o script:
+`./automacao_medusa.sh (IP real do seu alvo)`
