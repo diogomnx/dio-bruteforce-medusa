@@ -18,6 +18,7 @@ Este repositório documenta a execução de um projeto prático de simulação d
 
 ### 1. Criação das Wordlists
 Foram criadas listas de usuários (`users.txt`) e senhas (`passwords.txt`) contendo credenciais padrão e fracas frequentemente encontradas em configurações de fábrica.
+**Obs.: Ambos os arquivos (`users.txt` e `passwords.txt`) estão anexados na raiz deste repositório para consulta e reprodução dos testes.**
 
 ### 2. Ataque ao Serviço FTP
 Comando utilizado para auditar o serviço FTP na porta 21:
